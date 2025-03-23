@@ -1,0 +1,151 @@
+/* Navbar styling */
+.navbar {
+    background-color: black;
+    padding: 1rem 0; /* Padding for top and bottom of the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Flex container for layout */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem; /* Padding for the sides of the navbar */
+  }
+  
+  /* Logo on the left */
+  .logo-img {
+    margin-right: auto;
+    height: 75px; /* Size of the logo */
+    width: auto;
+    outline: none;
+  }
+  
+  /* Remove space around the logo image */
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    padding: 0; /* Remove padding to eliminate extra space */
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    border: 0;
+  }
+  
+  /* Menu icon for mobile */
+  .menu-icon {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Navigation menu */
+  .nav-menu {
+    display: flex;
+    gap: 2.5rem; /* Space between links */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    padding-top: 0.5rem;  /* Space above the text */
+    padding-bottom: 0.5rem;  /* Space below the text */
+  }
+  
+  /* Navigation links */
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+  }
+  
+  /* Overline and underline effect */
+  .nav-link::before,
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #1da1f2;
+    transition: all 0.4s ease; /* Animate both width and positioning */
+  }
+  
+  /* Overline (above the text) starts from the left */
+  .nav-link::before {
+    top: 0;
+    left: 0;
+    width: 0;
+  }
+  
+  /* Underline (below the text) starts from the right */
+  .nav-link::after {
+    bottom: 0;
+    right: 0;
+    width: 0;
+  }
+  
+  /* On hover: Overline expands from left to right */
+  .nav-link:hover::before {
+    width: 100%; /* Expands the overline from left to right */
+    left: 0; /* Ensure it starts from the left */
+  }
+  
+  /* On hover: Underline expands from right to left */
+  .nav-link:hover::after {
+    width: 100%; /* Expands the underline from right to left */
+    right: 0; /* Ensure it starts from the right */
+  }
+  
+  /* Social icons */
+  .social a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social a:hover {
+    color: #1da1f2;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .nav-menu li {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+  

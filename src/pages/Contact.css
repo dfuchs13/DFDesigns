@@ -1,0 +1,69 @@
+
+  body, .contactForm {
+    height: 100vh;            /* Full viewport height */
+    margin: 0;              /* Remove default body margin */
+  }
+
+  .contact-text {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 120px;
+    margin-top: 5vh; /* Adjust margin to control vertical spacing */
+
+    font-size: 1rem; /* Responsive font size */
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;            /* Padding around the form */
+    background-color: #fff;   /* Background color */
+    border-radius: 8px;       /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding-top: 0;
+    margin-top: 20px;
+  }
+  .formRow {
+    margin: 10px 20px 20px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .formInput {
+    width: 100%;              /* Make inputs full width */
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .col-6 {
+    margin-top: 20px;
+  }
+  .errorMessage {
+    color: #f45532;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .submit-btn {
+    padding: 15px 50px;
+    border-radius: 10px;
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: auto;              /* Keep button width auto to avoid stretching */
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;  /* Change on hover */
+  }
+
+  @media (max-width: 768px) {
+    .submit-message {
+      width: 125px;
+      margin-left: 200px;
+    }
+  }

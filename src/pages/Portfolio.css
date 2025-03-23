@@ -1,0 +1,82 @@
+#portfolio {
+    padding: 20px;
+    margin-top: 120px;
+}
+.grid-imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between images */
+  }
+  
+  .image-container {
+    position: relative; /* For overlay positioning */
+  }
+  
+  .grid-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: adds rounded corners to images */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+  }
+  
+  /* Hover effect for the images */
+  .grid-img:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  
+  /* Overlay styling */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with opacity */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px; /* Optional: rounded corners to match images */
+  }
+  
+  /* Show the overlay when hovering over the image container */
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Title inside the overlay */
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow to text for better visibility */
+    font-family: 'Roboto', sans-serif;
+}
+  
+  /* Styling for the Link (remove underlines for better UI) */
+  a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 1024px) {
+  .grid-imgs {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-imgs {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-imgs {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
+
