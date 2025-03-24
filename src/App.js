@@ -25,7 +25,7 @@ import PhotoGallery from './pages/PhotoGallery';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/DFDesigns">
       <Nav />
       <Routes>
           <Route path='/' element={<Home />} />

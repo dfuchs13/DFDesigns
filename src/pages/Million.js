@@ -1,6 +1,6 @@
 import React from 'react'
 import './Million.css';
-import MVideo from '../portfolio/Million/Million2.mp4';
+
 
 
 
@@ -16,7 +16,7 @@ function Million() {
         </div>
             <div class="m-container">
                 <video className="style-video" controls>
-                    <source src={MVideo} type="video/mp4" />
+                    <source src="https://photos.app.goo.gl/wfbu8xzfXeFKNyhM6" type="video/mp4" />
                 </video>
           </div></>
   )
