@@ -29,7 +29,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "homepage": "https://dfuchs13.github.io/",
+  "homepage": "https://dfuchs13.github.io/DFDesigns",
   "eslintConfig": {
     "extends": [
       "react-app",
