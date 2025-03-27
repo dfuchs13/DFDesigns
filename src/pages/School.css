@@ -16,7 +16,7 @@
     grid-template-rows: auto;
     grid-template-areas: 
         "bj bj type"
-        "bj2 bj2 sand" /* Adjusted for bj2 and sand to take up 50% width each */
+        "bj2 bj2 sand" 
         "tea1 tea2 tea3"
         "tea4 tea4 tea6"
         "arches arches arches"
@@ -26,8 +26,8 @@
     max-width: 1300px;
     margin-bottom: 0;
     margin-top: 0;
-    margin: auto; /* Centers the container */
-    overflow: hidden; /* Prevents horizontal scrolling */
+    margin: auto;
+    overflow: hidden; 
 }
 
 /* Assigning the grid areas */
@@ -41,11 +41,11 @@
 }
 .bj2 { 
     grid-area: bj2; 
-    width: 100%; /* Takes up 50% of the page width */
+    width: 100%; 
 }
 .sand { 
     grid-area: sand; 
-    width: 100%; /* Takes up 50% of the page width */
+    width: 100%; 
     padding-top: 400px;
 }
 .tea1 { 
@@ -79,9 +79,9 @@
 }
 
 .bj2 img, .sand img {
-    width: 100%; /* Ensures they scale correctly */
-    height: auto; /* Match container height */
-    object-fit: cover; /* Prevents cropping */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
 @media (max-width: 780px) {
@@ -95,7 +95,7 @@
     }
 
     .s_container {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         grid-template-areas: 
             "bj"
             "type"
@@ -107,11 +107,11 @@
             "tea4"
             "tea6"
             "arches"
-            "church"; /* Stacks all items vertically */
+            "church"; 
     }
     .sand { 
         grid-area: sand; 
-        width: 100%; /* Takes up 50% of the page width */
+        width: 100%;
         padding-top: 0;
 
     }

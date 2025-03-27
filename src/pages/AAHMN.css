@@ -20,8 +20,8 @@
     gap: 10px;
     width: 100%;
     max-width: 1300px;
-    margin: auto; /* Centers the container */
-    overflow: hidden; /* Prevents horizontal scrolling */
+    margin: auto; 
+    overflow: hidden; 
 }
 
 /* Assigning the grid areas */
@@ -64,7 +64,7 @@
          margin-left: 50px;
     }
     .AA_container {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         grid-template-areas: 
             "wwp"
             "phone1"
@@ -72,6 +72,6 @@
             "shirt"
             "howl"
             "screen"
-            "woof"; /* Stacks all items vertically */
+            "woof"; 
     }
 }

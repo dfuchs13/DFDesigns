@@ -15,29 +15,29 @@
 .v-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    gap: 60px; /* Adds space between videos */
-    height: auto; /* Height adjusts to content */
-    max-width: 600px; /* Maximum width of the container */
-    margin: 0 auto; /* Centers the container horizontally */
+    justify-content: center; 
+    align-items: center;
+    gap: 60px;
+    height: auto; 
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 /* Styled video */
 .styled-v {
     display: block;
-    width: 100%; /* Makes the video responsive */
-    max-width: 600px; /* Limits the max width of each video */
-    border: 3px solid #1da1f2; /* Adds a border around the video */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    width: 100%; 
+    max-width: 600px; 
+    border: 3px solid #1da1f2; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     margin-bottom: 40px;
 }
 
 /* Video hover effect */
 .styled-v:hover {
-    transform: scale(1.05); /* Adds a zoom effect on hover */
-    transition: transform 0.3s ease; /* Smooth transition */
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
 }
 
 /* Responsive adjustments for smaller screens */
@@ -51,7 +51,7 @@
         margin-left: 50px;
     }
     .v-container {
-        flex-direction: column; /* Stacks videos vertically on smaller screens */
-        align-items: center; /* Ensures the videos are centered */
+        flex-direction: column;
+        align-items: center; 
     }
 }

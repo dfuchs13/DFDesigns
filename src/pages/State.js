@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './State.css';
 import WI1 from '../portfolio/State/wi1.png';
 import MN1 from '../portfolio/State/mn1.png';
@@ -6,6 +6,9 @@ import WI2 from '../portfolio/State/wi2.png';
 import MN2 from '../portfolio/State/mn2.png';
 
 function State() {
+   useEffect(() => {
+              window.scrollTo(0, 0);
+          }, []);
   return (
     <><div className="state_title">
           <h1>| State Illustrations |</h1>

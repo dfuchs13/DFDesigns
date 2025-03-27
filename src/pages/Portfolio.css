@@ -4,25 +4,25 @@
 }
 .grid-imgs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 20px; /* Space between images */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
   }
   
   .image-container {
-    position: relative; /* For overlay positioning */
+    position: relative; 
   }
   
   .grid-img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px; /* Optional: adds rounded corners to images */
-    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
   }
   
   /* Hover effect for the images */
   .grid-img:hover {
-    transform: scale(1.05); /* Zoom effect */
+    transform: scale(1.05); 
   }
   
   /* Overlay styling */
@@ -32,15 +32,15 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with opacity */
+    background-color: rgba(0, 0, 0, 0.6); 
     color: white;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    transition: opacity 0.3s ease; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 8px; /* Optional: rounded corners to match images */
+    border-radius: 8px; 
   }
   
   /* Show the overlay when hovering over the image container */
@@ -53,30 +53,30 @@
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow to text for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
     font-family: 'Roboto', sans-serif;
 }
   
-  /* Styling for the Link (remove underlines for better UI) */
+  /* Styling for the Link  */
   a {
     text-decoration: none;
   }
 
   @media (max-width: 1024px) {
   .grid-imgs {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .grid-imgs {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .grid-imgs {
-    grid-template-columns: 1fr; /* 1 column on very small screens */
+    grid-template-columns: 1fr; 
   }
 }
 

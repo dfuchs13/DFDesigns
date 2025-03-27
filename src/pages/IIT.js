@@ -1,5 +1,5 @@
-import React from 'react'
-import './IIT.css'
+import React, { useEffect } from 'react';
+import './IIT.css';
 import Phish from '../portfolio/IIT/Phishing.png';
 import Heart from '../portfolio/IIT/Heart.png';
 import Cyber from '../portfolio/IIT/Cyber.png';
@@ -14,6 +14,9 @@ import Halloween from '../portfolio/IIT/Halloween.png';
 
 
 function Logo() {
+  useEffect(() => {
+              window.scrollTo(0, 0);
+          }, []);
   return (
    <>
        <div className="IIT_title">

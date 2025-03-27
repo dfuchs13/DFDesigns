@@ -9,16 +9,16 @@
     line-height: 2;
 }
 .phish {
-    display: block; /* Ensures it's treated as a block element */
+    display: block; 
     max-width: 800px;
-    margin: 0 auto; /* Centers it horizontally */
-    text-align: center; /* Ensures inline content (like images) is centered */
+    margin: 0 auto; 
+    text-align: center; 
     padding-bottom: 80px;
 }
 
 .IIT_container2 {
     display: grid;
-    grid-template-columns: repeat(1fr); /* Two equal columns */
+    grid-template-columns: repeat(1fr); 
     grid-template-areas: 
          "heart cyber"
          "high birth"
@@ -30,14 +30,14 @@
     max-width: 1200px;
     justify-items: center;
     align-items: start;
-    margin: 0 auto; /* Centers the container */
-    overflow: hidden; /* Prevents horizontal scrolling */
+    margin: 0 auto; 
+    overflow: hidden;
     padding-bottom: 40px;
 }
 .IIT_container2 img {
-    width: 100%; /* Fills grid column */
-    max-width: 600px; /* Prevents oversized images */
-    object-fit: contain; /* Makes all images the same height without distortion */
+    width: 100%; 
+    max-width: 600px; 
+    object-fit: contain; 
     height: auto;
 }
 
@@ -94,7 +94,7 @@
          margin-left: 50px;
     }
     .IIT_container2 {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         grid-template-areas: 
             "phish"
             "heart"

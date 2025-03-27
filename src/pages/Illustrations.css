@@ -11,11 +11,11 @@
 .poster-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers posters horizontally */
-    gap: 20px; /* Adds spacing between posters */
+    align-items: center; 
+    gap: 20px; 
     width: 100%;
-    max-width: 600px; /* Adjust max width */
-    margin: 0 auto; /* Centers container */
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 .poster-container img {
     width: 100%;

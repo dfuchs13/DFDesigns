@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Fox.css';
 import Fox from '../portfolio/Fox/fox.png';
 import Label1 from '../portfolio/Fox/CherryRiesling.png';
@@ -13,6 +13,10 @@ import Label8 from '../portfolio/Fox/Zin.png';
 
 
     function Klondike() {
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, []);
+        
         return (
            <>
            <div className="f_title">

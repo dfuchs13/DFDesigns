@@ -18,7 +18,7 @@ const Contact = () => {
     type: '',
   });
 
-  // Shows alert message for form submission feedback
+ 
   const toggleAlert = (message, type) => {
     setAlertInfo({ display: true, message, type });
 
@@ -28,14 +28,14 @@ const Contact = () => {
     }, 5000);
   };
 
-  // Function called on submit that uses emailjs to send email of valid contact form
+ 
   const onSubmit = async (data) => {
     const { name, email, subject, message } = data;
     try {
-      // Disable form while processing submission
+      
       setDisabled(true);
 
-      // Define template params
+      
       const templateParams = {
         name,
         email,
@@ -43,24 +43,24 @@ const Contact = () => {
         message,
       };
 
-      // Use emailjs to email contact form data
+      
       await emailjs.send(
-        "service_iz1x5r8",   // Using env variables
-        "template_rd2bc6r",  // Using env variables
+        "service_iz1x5r8",   
+        "template_rd2bc6r",  
         templateParams,
-        "CUk1qvckHREGKQAHL"   // Using env variables
+        "CUk1qvckHREGKQAHL"   
       );
 
-      // Display success alert
+      
       toggleAlert('Form submission was successful!', 'success');
     } catch (e) {
       console.error(e);
-      // Display error alert
+      
       toggleAlert('Uh oh. Something went wrong.', 'danger');
     } finally {
-      // Re-enable form submission
+     
       setDisabled(false);
-      // Reset contact form fields after submission
+     
       reset();
     }
   };
@@ -72,7 +72,7 @@ const Contact = () => {
           <div className="contactForm">
             <form
               id="contact-form"
-              onSubmit={handleSubmit(onSubmit)}  // Use handleSubmit directly
+              onSubmit={handleSubmit(onSubmit)}  
               noValidate
             >
               {/* Row 1 of form */}

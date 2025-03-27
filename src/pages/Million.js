@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Million.css';
 
 
 
 
 function Million() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <><div className="m_title">
           <h1>| A Million Dreams |</h1>

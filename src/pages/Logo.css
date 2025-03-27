@@ -9,10 +9,10 @@
     line-height: 2;
 }
 .rugby1 {
-    display: block; /* Ensures it's treated as a block element */
+    display: block; 
     max-width: 400px;
-    margin: 0 auto; /* Centers it horizontally */
-    text-align: center; /* Ensures inline content (like images) is centered */
+    margin: 0 auto; 
+    text-align: center;
     max-width: 400px;
 }
 
@@ -28,13 +28,13 @@
     max-width: 1200px;
     justify-items: center;
     align-items: center;
-    margin: 0 auto; /* Centers the container */
-    overflow: hidden; /* Prevents horizontal scrolling */
+    margin: 0 auto; 
+    overflow: hidden; 
 }
 .l_container2 img {
-    width: 100%; /* Makes images responsive within their grid cells */
-    max-width: 500px; /* Ensures they don’t get too big */
-    height: auto; /* Keeps the aspect ratio */
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
     object-fit: contain;
 }
 /* Assigning the grid areas */
@@ -81,7 +81,7 @@
          margin-left: 50px;
     }
     .l_container2 {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         grid-template-areas: 
             "farm1"
             "farm2"

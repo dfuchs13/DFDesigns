@@ -2,7 +2,7 @@
 .hero-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full screen height */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,10 +26,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Perfect centering */
-    max-width: 400px; /* Adjust logo size */
+    transform: translate(-50%, -50%); 
+    max-width: 320px;
     height: auto;
-    z-index: 2; /* Ensure it appears above the background image */
+    z-index: 2; 
+    padding-top: 80px;
     
   }
 

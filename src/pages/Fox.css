@@ -13,11 +13,11 @@
 .f_container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers posters horizontally */
-    gap: 20px; /* Adds spacing between posters */
+    align-items: center; 
+    gap: 20px; 
     width: 100%;
-    max-width: 600px; /* Adjust max width */
-    margin: 0 auto; /* Centers container */
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 .fox {
     width: 100%;
@@ -38,8 +38,8 @@
     max-width: 1200px;
     justify-items: center;
     align-items: center;
-    margin: 0 auto; /* Centers the container */
-    overflow: hidden; /* Prevents horizontal scrolling */
+    margin: 0 auto; 
+    overflow: hidden; 
     padding-bottom: 40px;
 }
 .cr { 
@@ -95,7 +95,7 @@
          margin-left: 50px;
     }
     .f_container2 {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         grid-template-areas: 
             "cr"
             "cherry"

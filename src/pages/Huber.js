@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Huber.css'
 import Hub1 from '../portfolio/Huber/Hub1.png';
 import Hub2 from '../portfolio/Huber/Hub2.png';
 
 function Huber() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    }, []);
   return (
    <>
        <div className="hub_title">

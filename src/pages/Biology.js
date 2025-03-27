@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Biology.css'
 import Page1 from '../portfolio/Biology/page1.png';
 import Page2 from '../portfolio/Biology/page2.png';
@@ -9,6 +9,9 @@ import Article2 from '../portfolio/Biology/Article2.png';
 
 
 function Logo() {
+   useEffect(() => {
+              window.scrollTo(0, 0);
+          }, []);
   return (
    <>
        <div className="b_title">
